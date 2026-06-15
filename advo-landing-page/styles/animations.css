@@ -1,0 +1,160 @@
+/* ============================================
+   ADVO Landing Page — Animations
+   ============================================ */
+
+/* ================================================
+   KEYFRAMES
+   ================================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+/* ================================================
+   SCROLL REVEAL
+   ================================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s var(--ease-out),
+              transform 0.6s var(--ease-out);
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.reveal--delay-1 { transition-delay: 100ms; }
+.reveal--delay-2 { transition-delay: 200ms; }
+.reveal--delay-3 { transition-delay: 300ms; }
+.reveal--delay-4 { transition-delay: 400ms; }
+.reveal--delay-5 { transition-delay: 500ms; }
+.reveal--delay-6 { transition-delay: 600ms; }
+.reveal--delay-7 { transition-delay: 700ms; }
+
+/* Scale variant */
+.reveal--scale {
+  transform: scale(0.95) translateY(20px);
+}
+
+.reveal--scale.reveal--visible {
+  transform: scale(1) translateY(0);
+}
+
+
+/* ================================================
+   HERO ANIMATIONS
+   ================================================ */
+
+.hero__badge {
+  animation: fadeInUp 0.6s var(--ease-out) 0.1s both;
+}
+
+.hero__title {
+  animation: fadeInUp 0.6s var(--ease-out) 0.2s both;
+}
+
+.hero__subtitle {
+  animation: fadeInUp 0.6s var(--ease-out) 0.35s both;
+}
+
+.hero__actions {
+  animation: fadeInUp 0.6s var(--ease-out) 0.5s both;
+}
+
+.hero__mockup {
+  animation: fadeInUp 0.8s var(--ease-out) 0.65s both;
+}
+
+/* Floating effect on the mockup */
+.hero__mockup-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+
+/* ================================================
+   COUNTER ANIMATION
+   ================================================ */
+
+.counter {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* ================================================
+   REDUCED MOTION
+   ================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero__mockup-float {
+    animation: none;
+  }
+}

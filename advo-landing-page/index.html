@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>ADVO — Sistema de Gestão Jurídica Moderno e Inteligente</title>
+  <meta name="description" content="ADVO é a plataforma completa para escritórios de advocacia. Gerencie processos, prazos, tarefas em Kanban, agenda interativa e fluxo de caixa em um único sistema rápido e seguro.">
+  <meta name="keywords" content="sistema jurídico, gestão advocacia, software escritório advocacia, controle processos, kanban jurídico, agenda advocacia">
+  <meta name="author" content="ADVO">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ADVO — Sistema de Gestão Jurídica Moderno e Inteligente">
+  <meta property="og:description" content="A gestão jurídica do futuro, simples e em tempo real. Controle processos, prazos, tarefas e finanças em uma plataforma única.">
+  <meta property="og:url" content="https://advo.com.br">
+  <meta property="og:site_name" content="ADVO">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/layout.css?v=3">
+  <link rel="stylesheet" href="./styles/components.css?v=3">
+  <link rel="stylesheet" href="./styles/animations.css">
+</head>
+<body>
+
+  <!-- ========================================
+       NAVBAR
+       ======================================== -->
+  <nav class="navbar" id="navbar" aria-label="Navegação principal">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" aria-label="ADVO — Página inicial">
+        <span class="navbar__logo-icon">AD</span>
+        <span>ADVO</span>
+      </a>
+
+      <button class="navbar__toggle" id="navbar-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbar-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="navbar__menu" id="navbar-menu">
+        <div class="navbar__links">
+          <a href="#modulos" class="navbar__link">Módulos</a>
+          <a href="#diferenciais" class="navbar__link">Diferenciais</a>
+          <a href="#faq" class="navbar__link">FAQ</a>
+        </div>
+        <a href="#" class="btn btn--primary navbar__cta" id="nav-cta">Começar Agora</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="section section--hero" id="hero">
+      <div class="hero__ambient"></div>
+      <div class="container">
+        <div class="hero">
+
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Sistema Jurídico Inteligente
+          </div>
+
+          <h1 class="hero__title">
+            A gestão jurídica do<br>
+            <span class="text-gradient">futuro, simples e</span><br>
+            <span class="text-gradient">em tempo real.</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Controle processos, gerencie prazos com calendário interativo,
+            organize tarefas em Kanban e monitore seu fluxo de caixa —
+            tudo em uma plataforma rápida, integrada e segura.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#" class="btn btn--primary btn--lg" id="hero-cta-primary">
+              Começar Agora — Grátis
+              <span class="btn--icon">→</span>
+            </a>
+            <a href="#" class="btn btn--secondary btn--lg" id="hero-cta-secondary">
+              Acessar Minha Conta
+            </a>
+          </div>
+
+          <!-- Dashboard Mockup (Pure CSS) -->
+          <div class="hero__mockup hero__mockup-float">
+            <div class="hero__mockup-glow"></div>
+            <div class="dashboard-mockup">
+              <div class="dashboard-mockup__topbar">
+                <div class="dashboard-mockup__dot"></div>
+                <div class="dashboard-mockup__dot"></div>
+                <div class="dashboard-mockup__dot"></div>
+              </div>
+              <div class="dashboard-mockup__body">
+                <div class="dashboard-mockup__sidebar">
+                  <div class="dashboard-mockup__sidebar-item dashboard-mockup__sidebar-item--active">
+                    <div class="dashboard-mockup__sidebar-icon"></div>
+                    <div class="dashboard-mockup__sidebar-label"></div>
+                  </div>
+                  <div class="dashboard-mockup__sidebar-item">
+                    <div class="dashboard-mockup__sidebar-icon"></div>
+                    <div class="dashboard-mockup__sidebar-label"></div>
+                  </div>
+                  <div class="dashboard-mockup__sidebar-item">
+                    <div class="dashboard-mockup__sidebar-icon"></div>
+                    <div class="dashboard-mockup__sidebar-label"></div>
+                  </div>
+                  <div class="dashboard-mockup__sidebar-item">
+                    <div class="dashboard-mockup__sidebar-icon"></div>
+                    <div class="dashboard-mockup__sidebar-label"></div>
+                  </div>
+                  <div class="dashboard-mockup__sidebar-item">
+                    <div class="dashboard-mockup__sidebar-icon"></div>
+                    <div class="dashboard-mockup__sidebar-label"></div>
+                  </div>
+                  <div class="dashboard-mockup__sidebar-item">
+                    <div class="dashboard-mockup__sidebar-icon"></div>
+                    <div class="dashboard-mockup__sidebar-label"></div>
+                  </div>
+                  <div class="dashboard-mockup__sidebar-item">
+                    <div class="dashboard-mockup__sidebar-icon"></div>
+                    <div class="dashboard-mockup__sidebar-label"></div>
+                  </div>
+                </div>
+                <div class="dashboard-mockup__content">
+                  <div class="dashboard-mockup__stats">
+                    <div class="dashboard-mockup__stat">
+                      <div class="dashboard-mockup__stat-value"></div>
+                      <div class="dashboard-mockup__stat-label"></div>
+                    </div>
+                    <div class="dashboard-mockup__stat">
+                      <div class="dashboard-mockup__stat-value"></div>
+                      <div class="dashboard-mockup__stat-label"></div>
+                    </div>
+                    <div class="dashboard-mockup__stat">
+                      <div class="dashboard-mockup__stat-value"></div>
+                      <div class="dashboard-mockup__stat-label"></div>
+                    </div>
+                  </div>
+                  <div class="dashboard-mockup__chart">
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                    <div class="dashboard-mockup__bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         MÓDULOS
+         ======================================== -->
+    <section class="section" id="modulos">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <span class="section__label">⚡ Módulos</span>
+          <h2 class="section__title">
+            Tudo que seu escritório<br>
+            <span class="text-gradient">precisa em um só lugar.</span>
+          </h2>
+          <p class="section__description">
+            Sete módulos integrados, desenhados para simplificar a rotina jurídica do seu escritório.
+          </p>
+        </div>
+
+        <div class="grid grid--3" id="modules-grid">
+
+          <!-- Módulo 1: Segurança -->
+          <div class="glass-card reveal reveal--delay-1">
+            <div class="glass-card__icon">🔐</div>
+            <h3 class="glass-card__title">Segurança & Acesso</h3>
+            <p class="glass-card__text">
+              Autenticação robusta com tokens JWT, renovação proativa de sessão
+              e encerramento automático após inatividade.
+            </p>
+          </div>
+
+          <!-- Módulo 2: Clientes -->
+          <div class="glass-card reveal reveal--delay-2">
+            <div class="glass-card__icon">👥</div>
+            <h3 class="glass-card__title">Clientes</h3>
+            <p class="glass-card__text">
+              Cadastro completo com busca automática de endereço por CEP.
+              Dados organizados e acessíveis em segundos.
+            </p>
+          </div>
+
+          <!-- Módulo 3: Processos -->
+          <div class="glass-card reveal reveal--delay-3">
+            <div class="glass-card__icon">⚖️</div>
+            <h3 class="glass-card__title">Processos</h3>
+            <p class="glass-card__text">
+              Painel de controle de processos com acompanhamento de
+              movimentações, timeline e partes contrárias.
+            </p>
+          </div>
+
+          <!-- Módulo 4: Agenda -->
+          <div class="glass-card reveal reveal--delay-4">
+            <div class="glass-card__icon">📅</div>
+            <h3 class="glass-card__title">Agenda</h3>
+            <p class="glass-card__text">
+              Calendário interativo para audiências, prazos e reuniões.
+              Nunca mais perca um compromisso importante.
+            </p>
+          </div>
+
+          <!-- Módulo 5: Tarefas -->
+          <div class="glass-card reveal reveal--delay-5">
+            <div class="glass-card__icon">📋</div>
+            <h3 class="glass-card__title">Tarefas Kanban</h3>
+            <p class="glass-card__text">
+              Quadro Kanban visual para organizar o fluxo de trabalho.
+              Arraste, priorize e acompanhe o progresso da equipe.
+            </p>
+          </div>
+
+          <!-- Módulo 6: Documentos -->
+          <div class="glass-card reveal reveal--delay-6">
+            <div class="glass-card__icon">📄</div>
+            <h3 class="glass-card__title">Documentos</h3>
+            <p class="glass-card__text">
+              Upload seguro de petições, procurações e contratos,
+              diretamente anexados aos processos.
+            </p>
+          </div>
+
+          <!-- Módulo 7: Financeiro (span 3 on desktop) -->
+          <div class="glass-card reveal reveal--delay-7 module-highlight">
+            <div class="glass-card__icon">💰</div>
+            <h3 class="glass-card__title">Financeiro</h3>
+            <p class="glass-card__text">
+              Fluxo de caixa com totalizadores automáticos, controle de baixas
+              de honorários e receitas/despesas vinculadas a processos.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         DIFERENCIAIS TÉCNICOS
+         ======================================== -->
+    <section class="section" id="diferenciais">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <span class="section__label">🏗️ Arquitetura</span>
+          <h2 class="section__title">
+            Construído para<br>
+            <span class="text-gradient">performance máxima.</span>
+          </h2>
+          <p class="section__description">
+            Tecnologia de ponta garantindo velocidade, segurança e confiabilidade
+            para o seu escritório.
+          </p>
+        </div>
+
+        <div class="grid grid--4">
+
+          <div class="glass-card feature-card reveal reveal--delay-1">
+            <div class="feature-card__metric counter" data-count="100" data-suffix="ms">0ms</div>
+            <h3 class="feature-card__title">Ultra Rápido</h3>
+            <p class="feature-card__text">
+              Construído com Vite + React para carregamento instantâneo sem travamentos.
+            </p>
+          </div>
+
+          <div class="glass-card feature-card reveal reveal--delay-2">
+            <div class="feature-card__metric counter" data-count="100" data-suffix="%">0%</div>
+            <h3 class="feature-card__title">API-Driven</h3>
+            <p class="feature-card__text">
+              Comunicação padronizada seguindo especificações OpenAPI completas.
+            </p>
+          </div>
+
+          <div class="glass-card feature-card reveal reveal--delay-3">
+            <div class="feature-card__metric counter" data-count="4" data-suffix=" níveis">0 níveis</div>
+            <h3 class="feature-card__title">Controle de Acesso</h3>
+            <p class="feature-card__text">
+              Permissões granulares: Admin, Advogado, Estagiário e Secretaria.
+            </p>
+          </div>
+
+          <div class="glass-card feature-card reveal reveal--delay-4">
+            <div class="feature-card__metric">&lt;1s</div>
+            <h3 class="feature-card__title">Atualização Otimista</h3>
+            <p class="feature-card__text">
+              Alterações refletem instantaneamente, sincronizando em segundo plano.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         FAQ
+         ======================================== -->
+    <section class="section" id="faq">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <span class="section__label">❓ FAQ</span>
+          <h2 class="section__title">
+            Perguntas<br>
+            <span class="text-gradient">frequentes.</span>
+          </h2>
+        </div>
+
+        <div class="faq reveal">
+
+          <!-- FAQ 1 -->
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" id="faq-q1">
+              <span>Como funciona a segurança dos meus dados?</span>
+              <span class="faq__icon">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" role="region" aria-labelledby="faq-q1">
+              <div class="faq__answer-content">
+                O ADVO utiliza autenticação baseada em tokens JWT com renovação proativa.
+                Após 15 minutos de inatividade, a sessão é encerrada automaticamente para
+                garantir a proteção total dos seus dados. Todas as comunicações são
+                criptografadas e as senhas são armazenadas com hash seguro.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" id="faq-q2">
+              <span>Posso vincular despesas a processos específicos?</span>
+              <span class="faq__icon">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" role="region" aria-labelledby="faq-q2">
+              <div class="faq__answer-content">
+                Sim! O módulo financeiro permite associação direta de receitas e despesas
+                tanto a Clientes quanto a Processos. Isso facilita o controle de honorários,
+                custas processuais e qualquer movimentação financeira vinculada a um caso
+                específico.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" id="faq-q3">
+              <span>Como funciona o cadastro de endereços?</span>
+              <span class="faq__icon">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" role="region" aria-labelledby="faq-q3">
+              <div class="faq__answer-content">
+                Ao cadastrar um cliente, basta digitar o CEP e o sistema preenche
+                automaticamente logradouro, bairro, cidade e estado utilizando
+                integração em tempo real com a base do ViaCEP. Rápido, preciso e
+                sem digitação desnecessária.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" id="faq-q4">
+              <span>O sistema funciona em dispositivos móveis?</span>
+              <span class="faq__icon">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" role="region" aria-labelledby="faq-q4">
+              <div class="faq__answer-content">
+                Sim. O ADVO foi desenvolvido com design responsivo, adaptando-se
+                perfeitamente a smartphones, tablets e desktops. Acesse de qualquer
+                lugar com a mesma experiência premium.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" id="faq-q5">
+              <span>Quais os níveis de permissão disponíveis?</span>
+              <span class="faq__icon">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" role="region" aria-labelledby="faq-q5">
+              <div class="faq__answer-content">
+                O sistema oferece quatro níveis de acesso: Administrador (acesso total),
+                Advogado (gestão de processos e finanças), Estagiário (visualização e
+                tarefas limitadas) e Secretaria (cadastros e agenda). Cada nível garante
+                que cada membro da equipe veja apenas o que precisa.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================
+         CTA FINAL
+         ======================================== -->
+    <section class="section" id="cta-final">
+      <div class="container">
+        <div class="cta-section reveal reveal--scale">
+          <div class="cta-section__bg"></div>
+          <div class="cta-section__glow"></div>
+          <div class="cta-section__content">
+            <h2 class="cta-section__title">
+              Pronto para transformar a<br>
+              <span class="text-gradient">gestão do seu escritório?</span>
+            </h2>
+            <p class="cta-section__text">
+              Comece gratuitamente e descubra como o ADVO pode
+              simplificar sua rotina jurídica.
+            </p>
+            <div class="flex flex--center flex--gap" style="flex-wrap: wrap;">
+              <a href="#" class="btn btn--primary btn--lg" id="final-cta-primary">
+                Criar Conta Gratuita
+                <span class="btn--icon">→</span>
+              </a>
+              <a href="#" class="btn btn--secondary btn--lg" id="final-cta-secondary">
+                Falar com Especialista
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__brand">
+          <span class="footer__brand-icon">AD</span>
+          <span>ADVO</span>
+        </div>
+
+        <p class="footer__copy">
+          © 2026 ADVO. Todos os direitos reservados.
+        </p>
+
+        <div class="footer__links">
+          <a href="#" class="footer__link">Termos de Uso</a>
+          <a href="#" class="footer__link">Privacidade</a>
+          <a href="#" class="footer__link">Contato</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
