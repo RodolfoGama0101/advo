@@ -53,25 +53,25 @@ O back-end do **ADVO** foi projetado seguindo a **Arquitetura Hexagonal** (tamb�
 
 ```mermaid
 graph TD
-    subgraph Adaptadores de Entrada (Inbound Adapters)
+    subgraph InboundAdapters ["Adaptadores de Entrada (Inbound Adapters)"]
         WebController[REST API Controllers]
     end
 
-    subgraph Portas de Entrada (Inbound Ports)
+    subgraph InboundPorts ["Portas de Entrada (Inbound Ports)"]
         UseCases[Casos de Uso / Use Cases]
     end
 
-    subgraph Núcleo do Domínio (Domain Core)
+    subgraph DomainCore ["Núcleo do Domínio (Domain Core)"]
         DomainServices[Serviços de Domínio]
         Entities[Entidades e Value Objects]
     end
 
-    subgraph Portas de Saída (Outbound Ports)
+    subgraph OutboundPorts ["Portas de Saída (Outbound Ports)"]
         RepoPorts[Repository Ports]
         SecurityPorts[Security / Storage Ports]
     end
 
-    subgraph Adaptadores de Saída (Outbound Adapters)
+    subgraph OutboundAdapters ["Adaptadores de Saída (Outbound Adapters)"]
         JPARepo[JPA Persistence Adapter]
         JwtSecurity[JWT Token Provider]
         FileSystem[Local Storage Adapter]
