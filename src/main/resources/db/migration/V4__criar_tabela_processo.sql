@@ -1,0 +1,22 @@
+CREATE TABLE processo (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    numero_processo VARCHAR(25) UNIQUE COMMENT 'Padrão CNJ: NNNNNNN-DD.AAAA.J.TR.OOOO',
+    titulo VARCHAR(255) NOT NULL,
+    tribunal VARCHAR(100),
+    vara VARCHAR(100),
+    fase_processual VARCHAR(50) NOT NULL DEFAULT 'INICIAL',
+    status VARCHAR(20) NOT NULL DEFAULT 'ATIVO',
+    descricao TEXT,
+    cliente_id BIGINT NOT NULL,
+    area_direito_id BIGINT,
+    data_distribuicao DATE,
+    valor_causa DECIMAL(15,2),
+    criado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    atualizado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT fk_processo_cliente FOREIGN KEY (cliente_id) REFERENCES cliente(id),
+    CONSTRAINT fk_processo_area_direito FOREIGN KEY (area_direito_id) REFERENCES area_direito(id),
+    INDEX idx_processo_numero (numero_processo),
+    INDEX idx_processo_cliente (cliente_id),
+    INDEX idx_processo_status (status),
+    INDEX idx_processo_fase (fase_processual)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

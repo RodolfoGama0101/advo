@@ -1,0 +1,22 @@
+CREATE TABLE cliente (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    tipo_pessoa VARCHAR(2) NOT NULL COMMENT 'PF ou PJ',
+    cpf_cnpj VARCHAR(18) NOT NULL UNIQUE,
+    email VARCHAR(255),
+    telefone VARCHAR(20),
+    logradouro VARCHAR(255),
+    numero VARCHAR(20),
+    complemento VARCHAR(100),
+    bairro VARCHAR(100),
+    cidade VARCHAR(100),
+    uf CHAR(2),
+    cep VARCHAR(10),
+    status VARCHAR(20) NOT NULL DEFAULT 'ATIVO',
+    observacoes TEXT,
+    criado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    atualizado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    INDEX idx_cliente_nome (nome),
+    INDEX idx_cliente_cpf_cnpj (cpf_cnpj),
+    INDEX idx_cliente_status (status)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

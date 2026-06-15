@@ -1,0 +1,21 @@
+CREATE TABLE transacao_financeira (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    descricao TEXT,
+    tipo VARCHAR(50) NOT NULL COMMENT 'RECEITA (Honorários, Custas Reembolsadas) ou DESPESA (Taxas Judiciais, Perícias)',
+    status VARCHAR(50) NOT NULL DEFAULT 'PENDENTE' COMMENT 'PENDENTE, PAGO, CANCELADO, ATRASADO',
+    valor DECIMAL(15,2) NOT NULL,
+    data_vencimento DATE NOT NULL,
+    data_pagamento DATE,
+    processo_id BIGINT,
+    cliente_id BIGINT,
+    usuario_id BIGINT NOT NULL COMMENT 'Advogado/Administrador que registrou a transação',
+    criado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    atualizado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT fk_transacao_processo FOREIGN KEY (processo_id) REFERENCES processo(id),
+    CONSTRAINT fk_transacao_cliente FOREIGN KEY (cliente_id) REFERENCES cliente(id),
+    CONSTRAINT fk_transacao_usuario FOREIGN KEY (usuario_id) REFERENCES usuario(id),
+    INDEX idx_transacao_tipo (tipo),
+    INDEX idx_transacao_status (status),
+    INDEX idx_transacao_vencimento (data_vencimento)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
